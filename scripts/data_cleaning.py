@@ -11,6 +11,23 @@ class DataCleaner:
     def __init__(self) -> None:
         self.summar = Data_Viz() 
 
+    def convert_to_datetime(self, df, columns):
+        """
+        convert to datetime.
+        """
+        for col in columns:
+            df[col] = pd.to_datetime(df[col])
+
+    def rename(self, df, col, old, new):
+        """
+        functions that renames specified list of old values with new ones
+        in a column
+        """
+        for i in range(len(old)):
+            df[col] = df[col].replace([old[i]], new[i])
+            
+        return df
+
 
     def fill_outliers_mean(self, df, cols):
         df_temp = df.copy(deep=True)

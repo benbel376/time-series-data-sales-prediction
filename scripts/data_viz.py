@@ -8,6 +8,27 @@ class Data_Viz:
     """
     Data visualization 
     """
+    def plot_bar(self, x_ax, y_ax, dfs, titles, axes ):
+        """
+        plots bar charts
+        """
+        for i in range(len(axes)):
+            sns.barplot(x=x_ax[i], y=y_ax[i], data=dfs[i], ax=axes[i]).set_title(titles[i])
+
+        plt.show()
+
+    
+    def compare_binom_dist(self, count_1, count_2, sample_1, sample_2, p_1, p_2) -> None:
+        fig, ax = plt.subplots(figsize=(12,6))
+        xC = np.linspace(count_1-1599, count_1+1600, 3200)
+        yC = scs.binom(sample_1, p_1).pmf(xC)
+        ax.bar(xC, yC, alpha=0.5)
+        xE = np.linspace(count_2-1599, count_2+1600, 3200)
+        yE = scs.binom(sample_2, p_2).pmf(xE)
+        ax.bar(xE, yE, alpha=0.5)
+        plt.xlabel('Promotion')
+        plt.ylabel('probability')
+        #plt.show()
 
     def binom_distribution(self, C_aware, C_total, C_cr) -> None:
         fig, ax = plt.subplots(figsize=(12,6))
