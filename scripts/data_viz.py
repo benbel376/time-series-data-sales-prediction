@@ -2,12 +2,25 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import scipy.stats as scs
 
 class Data_Viz:
     """
     Data visualization 
     """
 
+    def binom_distribution(self, C_aware, C_total, C_cr) -> None:
+        fig, ax = plt.subplots(figsize=(12,6))
+        x = np.linspace(C_aware-1599, C_aware+1600, 3200)
+        y = scs.binom(C_total, C_cr).pmf(x)
+        mean, var = scs.binom.stats(C_total, C_cr)
+        ax.bar(x, y, alpha=0.5)
+        plt.xlabel('Promotion')
+        plt.ylabel('probability')
+        plt.show()
+
+        print("mean = "+str(mean))
+        print("variance = "+str(var))
 
     def plot_box(self, df:pd.DataFrame, columns, color:str)->None:
         """
