@@ -75,16 +75,13 @@ class Data_Viz:
             # show plot
             plt.show()
 
-    def plot_box2(self, df:pd.DataFrame, col:str)->None:
+    def plot_box2(self, df:pd.DataFrame, col:list)->None:
         """
         Boxplot plotting function.
         """
-        plt.boxplot(df[col])
+        plt.figure(figsize=(8,8))
+        sns.boxplot(data=df[col])
         plt.title(f'Plot of {col}', size=20, fontweight='bold')
-        ax = plt.gca()
-        #ax.set_ylim(top = df[col].quantile(0.9999))
-        #ax.set_ylim(bottom = 0)
-        # show plot
         plt.show()
 
         logger.info("box plot successfully created")

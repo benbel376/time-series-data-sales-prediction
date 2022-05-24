@@ -1,0 +1,80 @@
+time: 2022-05-24 00:52:27,785, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 00:52:28,265, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 00:52:28,746, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 00:52:30,128, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 00:52:30,673, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 00:52:33,312, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 00:52:33,457, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 00:52:35,173, function: plot_box2, module: data_viz, message: box plot successfully created 
+
+time: 2022-05-24 00:52:37,754, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 00:52:39,940, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 00:52:48,299, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-24 00:53:00,568, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-24 00:53:10,526, function: compare_binom_dist, module: data_viz, message: double binomial distribution successfully created 
+
+time: 2022-05-24 00:53:26,625, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 00:54:14,037, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 00:54:15,982, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 00:54:16,435, function: plot_box2, module: data_viz, message: box plot successfully created 
+
+time: 2022-05-24 00:54:52,912, function: plot_bar, module: data_viz, message: bar plot successfully created 
+
+time: 2022-05-24 00:55:17,773, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 00:59:53,234, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 00:59:53,356, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 00:59:53,470, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 00:59:53,801, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 00:59:53,915, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 00:59:56,195, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 00:59:56,395, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:07:34,568, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:07:35,094, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:07:35,308, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:07:35,901, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:07:36,110, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:07:38,068, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:07:38,242, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:07:40,125, function: plot_box2, module: data_viz, message: box plot successfully created 
+
+time: 2022-05-24 01:07:41,713, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:07:43,505, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:08:15,468, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:08:49,172, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:08:50,611, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:08:51,132, function: plot_box2, module: data_viz, message: box plot successfully created 
+
