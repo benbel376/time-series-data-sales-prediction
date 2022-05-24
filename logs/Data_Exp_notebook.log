@@ -8,3 +8,43 @@ time: 2022-05-24 00:54:52,912, function: plot_bar, module: data_viz, message: ba
 
 time: 2022-05-24 00:55:17,773, function: summ_columns, module: data_viz, message: summary successfully created 
 
+time: 2022-05-24 02:42:06,919, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-24 02:42:06,919, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-24 02:42:16,372, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-24 02:42:16,372, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-24 02:42:24,028, function: compare_binom_dist, module: data_viz, message: double binomial distribution successfully created 
+
+time: 2022-05-24 02:42:24,028, function: compare_binom_dist, module: data_viz, message: double binomial distribution successfully created 
+
+time: 2022-05-24 02:43:53,139, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 02:43:53,139, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 02:47:06,406, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-24 02:47:06,406, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-24 02:47:06,406, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-24 02:47:15,626, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-24 02:47:15,626, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-24 02:47:15,626, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-24 02:47:22,880, function: compare_binom_dist, module: data_viz, message: double binomial distribution successfully created 
+
+time: 2022-05-24 02:47:22,880, function: compare_binom_dist, module: data_viz, message: double binomial distribution successfully created 
+
+time: 2022-05-24 02:47:22,880, function: compare_binom_dist, module: data_viz, message: double binomial distribution successfully created 
+
+time: 2022-05-24 02:48:31,033, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 02:48:31,033, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 02:48:31,033, function: summ_columns, module: data_viz, message: summary successfully created 
+

@@ -36,12 +36,14 @@ class DataTransformer:
         """
         assigns a numerical label to categorical values
         """
-        for column in cat_cols:
-            encoder = LabelEncoder()
-            df[column] = encoder.fit_transform(df[column])
+        try:
+            for column in cat_cols:
+                encoder = LabelEncoder()
+                df[column] = encoder.fit_transform(df[column])
         
-        print("catagories successfully labeled")
-
+            print("catagories successfully labeled")
+        except:
+            return df
         return df
 
 
@@ -71,11 +73,14 @@ class DataTransformer:
 
         return scaled
 
-    def target_feature(self, df, f_r, t):
+    def target_feature(self, df, f, t):
         """
         target and feature separator
+        f: starting index for features
+        t: the index of the target varoab;e
         """
-        features = df.iloc[:,f_r[0]:f_r[1]].values
+
+        features = df.iloc[:,f:].values
         target = df.iloc[:,t].values
         
         print("target and features separated")
