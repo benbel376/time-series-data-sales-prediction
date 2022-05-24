@@ -5,13 +5,19 @@ from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.preprocessing import FunctionTransformer
+import logging
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
 
 class DataTransformer:
     """
     provides transformer functions for machine learning.
     """
-    def __init__(self) -> None:
-        pass
+    def __init__(self, filehandler) -> None:
+        file_handler = logging.FileHandler(filehandler)
+        formatter = logging.Formatter("time: %(asctime)s, function: %(funcName)s, module: %(name)s, message: %(message)s \n")
+        file_handler.setFormatter(formatter)
+        logger.addHandler(file_handler)
 
 
     def sep_cat_num(self, df):
@@ -21,6 +27,8 @@ class DataTransformer:
         categorical_columns = df.select_dtypes(include='object')
         numerical_columns = df.select_dtypes(exclude='object')
 
+        logger.info("successfully separated")
+        
         return categorical_columns, numerical_columns
 
     
@@ -45,6 +53,7 @@ class DataTransformer:
         df[:] = scaling.fit_transform(df[:])
 
         print("Data successfully scaled")
+        logger.info("Dataset successfully scaled")
         
         return df
 
@@ -58,6 +67,7 @@ class DataTransformer:
         scaled = pd.DataFrame(scaler.fit_transform(df))
 
         print("Data successfully normalized")
+        logger.info("Dataset successfully normalized")
 
         return scaled
 
@@ -69,6 +79,7 @@ class DataTransformer:
         target = df.iloc[:,t].values
         
         print("target and features separated")
+        logger.info("target and features separated")
 
         return features, target
 
@@ -83,6 +94,7 @@ class DataTransformer:
         x_train, x_val, y_train, y_val = train_test_split(x_train, y_train,test_size= per_2, shuffle = True, random_state = rand_state)
 
         print("data successfully splitted")
+        logger.info("data successfully splitted")
 
 
         return [x_train, y_train, x_test, y_test, x_val, y_val]

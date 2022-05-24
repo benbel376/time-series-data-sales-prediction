@@ -3,11 +3,22 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import scipy.stats as scs
+import logging
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
 
 class Data_Viz:
     """
     Data visualization 
     """
+    def __init__(self, filehandler) -> None:
+        file_handler = logging.FileHandler(filehandler)
+        formatter = logging.Formatter("time: %(asctime)s, function: %(funcName)s, module: %(name)s, message: %(message)s \n")
+        file_handler.setFormatter(formatter)
+        logger.addHandler(file_handler)
+
+
     def plot_bar(self, x_ax, y_ax, dfs, titles, axes ):
         """
         plots bar charts
@@ -16,6 +27,7 @@ class Data_Viz:
             sns.barplot(x=x_ax[i], y=y_ax[i], data=dfs[i], ax=axes[i]).set_title(titles[i])
 
         plt.show()
+        logger.info("bar plot successfully created")
 
     
     def compare_binom_dist(self, count_1, count_2, sample_1, sample_2, p_1, p_2) -> None:
@@ -30,6 +42,8 @@ class Data_Viz:
         plt.ylabel('probability')
         #plt.show()
 
+        logger.info("double binomial distribution successfully created")
+
     def binom_distribution(self, C_aware, C_total, C_cr) -> None:
         fig, ax = plt.subplots(figsize=(12,6))
         x = np.linspace(C_aware-1599, C_aware+1600, 3200)
@@ -42,6 +56,8 @@ class Data_Viz:
 
         print("mean = "+str(mean))
         print("variance = "+str(var))
+
+        logger.info("binomial distribution successfully plotted")
 
     def plot_box(self, df:pd.DataFrame, columns, color:str)->None:
         """
@@ -70,6 +86,8 @@ class Data_Viz:
         #ax.set_ylim(bottom = 0)
         # show plot
         plt.show()
+
+        logger.info("box plot successfully created")
 
 
     def plot_pie(self, df, col, title):
@@ -122,6 +140,8 @@ class Data_Viz:
             for i in range(df2.shape[0]):
                 unique_val.append(len(pd.unique(df[df2.iloc[i,0]])))
             df2['unique_values'] = pd.Series(unique_val)
+
+        logger.info("summary successfully created")
         return df2
 
     
@@ -139,3 +159,4 @@ class Data_Viz:
         # Calculate percentage of missing values
         print("The dataset contains", round(
             ((totalMissing/totalCells) * 100), 2), "%", "missing values.")
+        logger.info("missing values percentage succesfully displayed")

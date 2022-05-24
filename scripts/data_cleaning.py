@@ -2,14 +2,21 @@ import pandas as pd
 import numpy as np
 from regex import D
 from data_viz import Data_Viz;
+import logging
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
 
 
 class DataCleaner:
     """
     class that handles data cleaning.
     """
-    def __init__(self) -> None:
-        self.summar = Data_Viz() 
+    def __init__(self, filehandler) -> None:
+        self.summar = Data_Viz("../logs/data_clean_script.log") 
+        file_handler = logging.FileHandler(filehandler)
+        formatter = logging.Formatter("time: %(asctime)s, function: %(funcName)s, module: %(name)s, message: %(message)s \n")
+        file_handler.setFormatter(formatter)
+        logger.addHandler(file_handler)
 
     def convert_to_datetime(self, df, columns):
         """
@@ -17,6 +24,8 @@ class DataCleaner:
         """
         for col in columns:
             df[col] = pd.to_datetime(df[col])
+
+        logger.info("string successfully converted to datetime")
 
     def rename(self, df, col, old, new):
         """
@@ -26,7 +35,10 @@ class DataCleaner:
         for i in range(len(old)):
             df[col] = df[col].replace([old[i]], new[i])
             
+        logger.info("values successfully renamed")
+
         return df
+        
 
 
     def fill_outliers_mean(self, df, cols):
@@ -46,6 +58,8 @@ class DataCleaner:
 
             ''' filling the Outliers '''
             df_temp = self.fill_missing_by_median(df_temp, cols)
+
+        logger.info("outliers successfully filled with the mean value")
 
         return df_temp
 
@@ -68,6 +82,8 @@ class DataCleaner:
             ''' Removing the Outliers '''
             df_temp.drop(rm_lis, inplace = True)
 
+        logger.info("outliers successfully removed")
+
         return df_temp
     
     def remove_cols(self, df, cols, keep=False):
@@ -78,6 +94,8 @@ class DataCleaner:
             r_df = df.loc[:,cols]
         else:
             r_df = df.drop(cols, axis=1)
+
+        logger.info("columns successfully removed")
 
         return r_df
 
@@ -91,6 +109,8 @@ class DataCleaner:
             if(temp.iloc[i,2] > limit):
                 rem_lis.append(temp.iloc[i,0])
         r_df = df.drop(rem_lis, axis=1) 
+
+        logger.info("columns with missing values removed successfully")
         
         return r_df
 
@@ -112,6 +132,8 @@ class DataCleaner:
         for col in mod_fill_list:
             df[col] = df[col].fillna(df[col].mode()[0])
         
+        logger.info("missing values filled with mode")
+
         return df
 
 
@@ -133,6 +155,8 @@ class DataCleaner:
         for col in mean_fill_list:
             df[col] = df[col].fillna(df[col].median())
         
+        logger.info("missing value successfully filled with the mean")
+
         return df
 
     def fill_missing_by_median(self, df, cols=None):
@@ -152,24 +176,13 @@ class DataCleaner:
 
         for col in median_fill_list:
             df[col] = df[col].fillna(df[col].median())
+
+        logger.info("missing values successfully filled with the median value")
+
         return df
 
 
-    def fill_missing_forward(self, df, cols):
-        """
-        fills missing values by value from next rows
-        """
-        for col in cols:
-            df[col] = df[col].fillna(method='ffill')
-        return df
-
-    def fill_missing_backward(self, df, cols):
-        """
-        fills missing values by value from previous rows
-        """
-        for col in cols:
-            df[col] = df[col].fillna(method='bfill')
-        return df
+    
 
 
     
