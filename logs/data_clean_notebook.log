@@ -58,3 +58,47 @@ time: 2022-05-24 00:59:56,195, function: summ_columns, module: data_viz, message
 
 time: 2022-05-24 00:59:56,395, function: summ_columns, module: data_viz, message: summary successfully created 
 
+time: 2022-05-24 01:07:34,568, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:07:35,094, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:07:35,308, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:07:35,901, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:07:35,905, function: reduce_dim_missing, module: data_cleaning, message: columns with missing values removed successfully 
+
+time: 2022-05-24 01:07:36,110, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:07:38,068, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:07:38,242, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:07:40,125, function: plot_box2, module: data_viz, message: box plot successfully created 
+
+time: 2022-05-24 01:07:41,713, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:07:42,028, function: fill_missing_by_median, module: data_cleaning, message: missing values successfully filled with the median value 
+
+time: 2022-05-24 01:07:43,505, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:07:44,128, function: fill_missing_by_mode, module: data_cleaning, message: missing values filled with mode 
+
+time: 2022-05-24 01:08:15,468, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:08:15,532, function: fill_missing_by_median, module: data_cleaning, message: missing values successfully filled with the median value 
+
+time: 2022-05-24 01:08:49,172, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:08:49,211, function: fill_missing_by_median, module: data_cleaning, message: missing values successfully filled with the median value 
+
+time: 2022-05-24 01:08:49,212, function: fill_outliers_mean, module: data_cleaning, message: outliers successfully filled with the mean value 
+
+time: 2022-05-24 01:08:50,611, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-24 01:08:51,132, function: plot_box2, module: data_viz, message: box plot successfully created 
+
+time: 2022-05-24 01:08:52,606, function: rename, module: data_cleaning, message: values successfully renamed 
+
+time: 2022-05-24 01:08:53,160, function: convert_to_datetime, module: data_cleaning, message: string successfully converted to datetime 
+
