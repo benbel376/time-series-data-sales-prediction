@@ -44,7 +44,7 @@ class Data_Viz:
 
         logger.info("double binomial distribution successfully created")
 
-    def binom_distribution(self, C_aware, C_total, C_cr) -> None:
+    def binom_distribution(self, C_aware, C_total, C_cr, name) -> None:
         fig, ax = plt.subplots(figsize=(12,6))
         x = np.linspace(C_aware-1599, C_aware+1600, 3200)
         y = scs.binom(C_total, C_cr).pmf(x)
@@ -53,11 +53,11 @@ class Data_Viz:
         plt.xlabel('Promotion')
         plt.ylabel('probability')
         plt.show()
-
-        print("mean = "+str(mean))
-        print("variance = "+str(var))
+        plt.savefig(name)
 
         logger.info("binomial distribution successfully plotted")
+
+        return [mean, var]
 
     def plot_box(self, df:pd.DataFrame, columns, color:str)->None:
         """
@@ -142,7 +142,7 @@ class Data_Viz:
         return df2
 
     
-    def percent_missing(df: pd.DataFrame):
+    def percent_missing(self, df: pd.DataFrame):
 
         # Calculate total number of cells in dataframe
         totalCells = np.product(df.shape)

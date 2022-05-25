@@ -348,3 +348,63 @@ time: 2022-05-25 06:10:49,795, function: summ_columns, module: data_viz, message
 
 time: 2022-05-25 06:10:49,795, function: summ_columns, module: data_viz, message: summary successfully created 
 
+time: 2022-05-25 09:28:16,063, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-25 09:28:26,875, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-25 09:28:35,519, function: compare_binom_dist, module: data_viz, message: double binomial distribution successfully created 
+
+time: 2022-05-25 09:30:01,161, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 09:40:26,814, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-25 09:41:19,381, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-25 09:41:42,306, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-25 09:44:43,735, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-25 09:46:21,153, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-25 09:49:10,150, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-25 09:49:29,750, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-25 09:49:41,142, function: compare_binom_dist, module: data_viz, message: double binomial distribution successfully created 
+
+time: 2022-05-25 09:51:06,152, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:33:00,575, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:33:00,853, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:33:01,027, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:33:01,771, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:33:02,015, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:33:02,512, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:33:02,678, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:33:05,321, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:33:05,464, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:33:07,146, function: plot_box2, module: data_viz, message: box plot successfully created 
+
+time: 2022-05-25 10:33:08,990, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:33:11,820, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:33:53,618, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:34:37,359, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:34:38,910, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:34:39,423, function: plot_box2, module: data_viz, message: box plot successfully created 
+
+time: 2022-05-25 10:34:54,766, function: summ_columns, module: data_viz, message: summary successfully created 
+
