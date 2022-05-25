@@ -66,3 +66,11 @@ time: 2022-05-25 09:44:43,735, function: binom_distribution, module: data_viz, m
 
 time: 2022-05-25 09:46:21,153, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
 
+time: 2022-05-25 09:49:10,150, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-25 09:49:29,750, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-25 09:49:41,142, function: compare_binom_dist, module: data_viz, message: double binomial distribution successfully created 
+
+time: 2022-05-25 09:51:06,152, function: summ_columns, module: data_viz, message: summary successfully created 
+

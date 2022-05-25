@@ -408,3 +408,57 @@ time: 2022-05-25 10:34:39,423, function: plot_box2, module: data_viz, message: b
 
 time: 2022-05-25 10:34:54,766, function: summ_columns, module: data_viz, message: summary successfully created 
 
+time: 2022-05-25 10:45:34,995, function: percent_missing, module: data_viz, message: missing values percentage succesfully displayed 
+
+time: 2022-05-25 10:45:35,010, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:45:35,916, function: percent_missing, module: data_viz, message: missing values percentage succesfully displayed 
+
+time: 2022-05-25 10:45:35,929, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:45:36,825, function: percent_missing, module: data_viz, message: missing values percentage succesfully displayed 
+
+time: 2022-05-25 10:45:36,868, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:45:37,505, function: percent_missing, module: data_viz, message: missing values percentage succesfully displayed 
+
+time: 2022-05-25 10:45:38,214, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:45:38,331, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:45:38,866, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:45:39,129, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:45:41,997, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:45:42,214, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:45:43,542, function: plot_box2, module: data_viz, message: box plot successfully created 
+
+time: 2022-05-25 10:45:45,616, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:45:47,786, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:46:46,038, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:47:29,222, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:47:31,272, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:47:31,918, function: plot_box2, module: data_viz, message: box plot successfully created 
+
+time: 2022-05-25 10:47:52,718, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:57:53,219, function: percent_missing, module: data_viz, message: missing values percentage succesfully displayed 
+
+time: 2022-05-25 10:57:53,234, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:58:09,615, function: percent_missing, module: data_viz, message: missing values percentage succesfully displayed 
+
+time: 2022-05-25 10:58:09,629, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-25 10:58:25,905, function: percent_missing, module: data_viz, message: missing values percentage succesfully displayed 
+
+time: 2022-05-25 10:58:25,968, function: summ_columns, module: data_viz, message: summary successfully created 
+
