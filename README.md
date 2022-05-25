@@ -8,6 +8,7 @@
 
 - [Telecom User Analytics](#Telecom_user_analytics)
   - [Overview](#overview)
+  - [Objective](#Objective)
   - [Requirements](#requirements)
   - [Install](#install)
   - [Data](#data)
@@ -18,36 +19,53 @@
 
 ## Overview
 
-SmartAd is a mobile first advertiser agency. It designs intuitive touch-enabled advertising.
-The main objective of this project is to test if the ads that the advertising company runs resulted in a significant lift in brand awareness. 
+Rossmann Pharmaceuticals are multi-citiy pharmaceuticals stores. The company's finance team is 
+in need of sale forecast in all of their stores across several cities six weeks ahead of time
+managers in individual stores rely on their years of experience as well as their personal judgement
+to forecast sales until now.
+
+## Objective
+
+to build and serve an end-to-end product that delivers this prediction to analysts in the finance team.
 
 ## Requirements
-  Python 3.7 and above
+  Python 3.7 and above, mlflow, logging, dvc, sklearn, matplotlib, seaborn.
+
 
 ## Install
 ```
-git clone https://github.com/benbel376/SmartAd_service_analysis.git
-cd SmartAd_service_analysis
+git clone https://github.com/benbel376/rossman_predictive_analysis.git
+cd rossman_predictive_analysis
 pip install -r requirements.txt
 ```
 
-## Data
-  The BIO data for this project is a “Yes” and “No” response of online users to the following question
+## Data and Features
 
+The data for this challenge can be found [here, Rossmann Store Sales | Kaggle](https://www.kaggle.com/competitions/rossmann-store-sales/data)
 
-    Q: Do you know the brand Lux?
-		O  Yes
-		O  No
-
-SmartAd ran this campaign from 3-10 July 2020. The users that were presented with the questionnaire above were chosen according to the following rule:
-
-**Control:** users who have been shown a dummy ad
-**Exposed:** users who have been shown a creative (ad) that was designed by SmartAd for the client.
+### Data fields
+ 
+- Store - a unique Id for each store
+- Sales - the turnover for any given day (this is what you are predicting)
+- Customers - the number of customers on a given day
+- Open - an indicator for whether the store was open: 0 = closed, 1 = open
+- StateHoliday - indicates a state holiday. Normally all stores, with few exceptions, are closed on state   holidays. Note that all schools are closed on public holidays and weekends. a = public holiday, b = Easter holiday, c = Christmas, 0 = None
+- SchoolHoliday - indicates if the (Store, Date) was affected by the closure of public schools
+- StoreType - differentiates between 4 different store models: a, b, c, d
+- Assortment - describes an assortment level: a = basic, b = extra, c = extended. Read more about assortment here
+- CompetitionDistance - distance in meters to the nearest competitor store
+- CompetitionOpenSince[Month/Year] - gives the approximate year and month of the time the nearest competitor was opened
+- Promo - indicates whether a store is running a promo on that day
+- Promo2 - Promo2 is a continuing and consecutive promotion for some stores: 0 = store is not participating, 1 = store is participating
+- Promo2Since[Year/Week] - describes the year and calendar week when the store started participating in Promo2
+- PromoInterval - describes the consecutive intervals Promo2 is started, naming the months the promotion is started anew. E.g. "Feb,May,Aug,Nov" means each round starts in February, May, August, November of any given year for that store
 
 ## Features
+the folder structure
+![structure](outputs/folder_structure.txt)
 
 ### Data Processing and Analysis
-  - ![ML_flow](https://github.com/benbel376/rossman_predictive_analysis/blob/biniyam_main/charts/mlflow.jpg?raw=true)
+  - ![ML pipeline design](charts/pipeline.png?raw=true)
   
 ### Scripts
  - All the scripts used by the notebooks are inside the scripts folder.
