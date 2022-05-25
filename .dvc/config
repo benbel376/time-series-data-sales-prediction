@@ -1,0 +1,6 @@
+[core]
+    remote = dvc_rem
+    autostage = true
+['remote "dvc_rem"']
+    url = gdrive://1Aym4M4qTO9Koatdgz10Blo8gsIIj7Gh2
+    gdrive_use_service_account = true
