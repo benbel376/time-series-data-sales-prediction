@@ -20,6 +20,19 @@ class DataTransformer:
         logger.addHandler(file_handler)
 
 
+    def build_pipe(self, cat_list):
+        """
+        takes categorical column names: cat_list
+        returns a pipe that process data for modeling
+        """
+        pipe = Pipeline(steps = [
+                                ("labeling", FunctionTransformer(self.cat_labeler, kw_args={"cat_cols": cat_list})),
+                                ("scaling", FunctionTransformer(self.scaler)), 
+                                ("target", FunctionTransformer(self.target_feature, kw_args={"t":0})),
+                                ("split", FunctionTransformer(self.set_splitter, kw_args={"test": 0.2}))
+                                ])
+        return pipe
+
     def sep_cat_num(self, df):
         """
         separates categorical and numerical variables

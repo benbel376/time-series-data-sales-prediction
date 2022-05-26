@@ -158,3 +158,21 @@ time: 2022-05-25 06:10:54,562, function: set_splitter, module: data_transformati
 
 time: 2022-05-25 06:10:54,562, function: set_splitter, module: data_transformation, message: data successfully splitted 
 
+time: 2022-05-26 13:48:07,164, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 13:48:19,026, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 13:48:19,071, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 13:48:19,384, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 14:16:23,287, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 14:16:35,075, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 14:16:35,135, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 14:16:35,474, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 14:41:12,601, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
