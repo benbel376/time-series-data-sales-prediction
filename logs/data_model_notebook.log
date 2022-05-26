@@ -176,3 +176,225 @@ time: 2022-05-26 14:16:35,474, function: set_splitter, module: data_transformati
 
 time: 2022-05-26 14:41:12,601, function: sep_cat_num, module: data_transformation, message: successfully separated 
 
+time: 2022-05-26 14:45:39,039, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 14:45:39,039, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 14:45:39,039, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 14:45:40,761, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 14:45:40,761, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 14:45:40,761, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 14:45:40,787, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 14:45:40,787, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 14:45:40,787, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 14:45:40,847, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 14:45:40,847, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 14:45:40,847, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 14:59:44,561, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 14:59:44,561, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 14:59:44,561, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 14:59:45,652, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 14:59:45,652, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 14:59:45,652, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 14:59:45,673, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 14:59:45,673, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 14:59:45,673, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 14:59:45,736, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 14:59:45,736, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 14:59:45,736, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 15:01:32,325, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:01:32,325, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:01:32,325, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:01:33,256, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 15:01:33,256, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 15:01:33,256, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 15:01:33,275, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 15:01:33,275, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 15:01:33,275, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 15:01:33,312, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 15:01:33,312, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 15:01:33,312, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 15:04:40,226, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:04:40,226, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:04:40,226, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:04:40,951, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 15:04:40,951, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 15:04:40,951, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 15:04:40,967, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 15:04:40,967, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 15:04:40,967, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 15:04:41,008, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 15:04:41,008, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 15:04:41,008, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 15:12:31,986, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:12:31,986, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:12:31,986, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:12:32,694, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 15:12:32,694, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 15:12:32,694, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 15:12:32,724, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 15:12:32,724, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 15:12:32,724, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 15:12:32,770, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 15:12:32,770, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 15:12:32,770, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 15:18:35,035, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:18:35,035, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:18:35,035, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:18:53,858, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:18:53,858, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:18:53,858, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:18:54,611, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 15:18:54,611, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 15:18:54,611, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 15:18:54,628, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 15:18:54,628, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 15:18:54,628, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 15:18:54,664, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 15:18:54,664, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 15:18:54,664, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 15:20:30,298, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:20:30,298, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:20:30,298, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:20:31,068, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 15:20:31,068, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 15:20:31,068, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 15:20:31,088, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 15:20:31,088, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 15:20:31,088, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 15:20:31,122, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 15:20:31,122, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 15:20:31,122, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 15:21:09,424, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:21:09,424, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:21:09,424, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:21:10,048, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 15:21:10,048, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 15:21:10,048, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 15:21:10,065, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 15:21:10,065, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 15:21:10,065, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 15:21:10,101, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 15:21:10,101, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 15:21:10,101, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 15:22:42,399, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:22:42,399, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:22:42,399, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-26 15:22:43,067, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 15:22:43,067, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 15:22:43,067, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-26 15:22:43,093, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 15:22:43,093, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 15:22:43,093, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-26 15:22:43,129, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 15:22:43,129, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-26 15:22:43,129, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
