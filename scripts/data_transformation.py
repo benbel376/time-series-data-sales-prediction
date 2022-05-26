@@ -88,7 +88,7 @@ class DataTransformer:
 
         return features, target
 
-    def set_splitter(self, input, test, val, rand_state):
+    def set_splitter(self, input, test, rand_state = 10, val = 0):
         """
         splits dataset into specified percentages.
         """
@@ -96,10 +96,13 @@ class DataTransformer:
         per_1 = test
         per_2 = (1-test)*val
         x_train, x_test, y_train, y_test = train_test_split(features, target,test_size= per_1,shuffle = True, random_state = rand_state )
-        x_train, x_val, y_train, y_val = train_test_split(x_train, y_train,test_size= per_2, shuffle = True, random_state = rand_state)
+        if(per_2 != 0):
+            x_train, x_val, y_train, y_val = train_test_split(x_train, y_train,test_size= per_2, shuffle = True, random_state = rand_state)
 
         print("data successfully splitted")
         logger.info("data successfully splitted")
 
-
-        return [x_train, y_train, x_test, y_test, x_val, y_val]
+        if(per_2 !=0):        
+            return [x_train, y_train, x_test, y_test, x_val, y_val]
+        else:
+            return [x_train, y_train, x_test, y_test]
