@@ -18,6 +18,12 @@ class Data_Viz:
         file_handler.setFormatter(formatter)
         logger.addHandler(file_handler)
 
+    def plot_line(self, df, x, y, figsize, title, name):
+        plt.figure(figsize=(figsize[0],figsize[1]))
+        sns.lineplot(x = x, y=y, data=df)
+        plt.title(title)
+        plt.savefig("../charts/"+name)
+        plt.show()
 
     def plot_bar(self, x_ax, y_ax, dfs, titles, axes ):
         """
