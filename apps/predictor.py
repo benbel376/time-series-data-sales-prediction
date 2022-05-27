@@ -3,10 +3,6 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 import pickle
-from sklearn.preprocessing import minmax_scale
-from sklearn.preprocessing import StandardScaler
-from sklearn.preprocessing import MinMaxScaler
-from PIL import Image
 
 import sys
 sys.path.insert(1, '../scripts')
@@ -14,29 +10,32 @@ sys.path.insert(1, '../scripts')
 
 def app():
 
-    st.title("Predict your sale?")
+    st.title("Predict your sale")
     st.subheader("This model will predict the sales and number of customers on a specified date")
 
-    model = pickle.load(open("../models/RFR-sales-27-05-2022-03-58-40.pkl", 'rb'))
-    scaler = pickle.load(open('../models/scaler-27-05-2022-03-58-40.pkl', 'rb'))
+    model = pickle.load(open("../models/RFR-sales-27-05-2022-09-40-35.pkl", 'rb'))
+    scaler = pickle.load(open('../models/scaler-27-05-2022-09-40-35.pkl', 'rb'))
     
     DayOfMonth = 3
     DayOfWeek = 4
     WeekOfYear = 30
     Month = 7
+    upload = 2
+
+
+    upl= st.radio(
+    "Do you want to upload the date info",
+    ('Enter', 'Upload'))
+
+    if upl == 'Upload':
+        upload = 1
+    else:
+        upload = 0
+
 
     with st.form(key='my_form'):
-        upload = 2
-        upl= st.radio(
-        "Do you want to upload the date info",
-        ('upload', 'Enter'))
-
-        if upl != 'upload':
-            upload = 0
-        else:
-            upload = 1
         
-        if(upload == 0):
+        if(upload == 1):
             uploaded_file = st.file_uploader("Choose a file")
             if uploaded_file is not None:
                 # Can be used wherever a "file-like" object is accepted:
@@ -46,7 +45,7 @@ def app():
                 DayOfWeek = dataframe.iloc[0,2]
                 WeekOfYear = dataframe.iloc[0,3]
                 Month = dataframe.iloc[0,4]
-        elif(upload == 1):
+        elif(upload == 0):
             Month = st.number_input("Month", min_value=1, max_value=12)
             DayOfMonth = st.number_input("Day of Month", min_value=1, max_value=31)
             DayOfWeek = st.number_input("Day of Week", min_value=1, max_value=7)

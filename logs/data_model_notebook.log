@@ -484,3 +484,33 @@ time: 2022-05-27 04:35:48,584, function: target_feature, module: data_transforma
 
 time: 2022-05-27 04:35:48,627, function: set_splitter, module: data_transformation, message: data successfully splitted 
 
+time: 2022-05-27 09:33:48,384, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-27 09:33:48,489, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-27 09:33:48,594, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-27 09:35:47,452, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-27 09:35:48,238, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-27 09:35:48,253, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-27 09:35:48,280, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-27 09:38:03,753, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-27 09:38:04,310, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-27 09:38:04,319, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-27 09:38:04,338, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
+time: 2022-05-27 09:40:01,491, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-27 09:40:02,047, function: scaler, module: data_transformation, message: Dataset successfully scaled 
+
+time: 2022-05-27 09:40:02,068, function: target_feature, module: data_transformation, message: target and features separated 
+
+time: 2022-05-27 09:40:02,083, function: set_splitter, module: data_transformation, message: data successfully splitted 
+
