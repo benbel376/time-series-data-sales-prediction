@@ -520,3 +520,35 @@ time: 2022-05-26 13:34:14,711, function: compare_binom_dist, module: data_viz, m
 
 time: 2022-05-26 13:36:00,554, function: summ_columns, module: data_viz, message: summary successfully created 
 
+time: 2022-05-27 17:13:51,156, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-27 17:13:52,881, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-27 17:13:58,691, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-27 17:25:07,371, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-27 17:25:07,642, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-27 17:25:09,629, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-27 17:43:51,743, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-27 17:44:17,296, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-27 17:44:32,430, function: compare_binom_dist, module: data_viz, message: double binomial distribution successfully created 
+
+time: 2022-05-27 17:46:06,308, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-28 00:27:29,200, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-28 01:58:41,935, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-28 15:01:22,209, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-28 15:40:10,714, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-28 15:40:11,304, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-28 15:40:14,724, function: summ_columns, module: data_viz, message: summary successfully created 
+

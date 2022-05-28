@@ -1,8 +1,13 @@
 import streamlit as st
 import sys
+import os
+parent_dir = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
+scripts_dir = parent_dir+"/scripts"
+data_directory = parent_dir+"/data"
+
 sys.path.insert(1, '../scripts')
 
-from multiapp2 import MultiApp
+from core import MultiApp
 import predictor # import your app modules here
 
 app = MultiApp()
