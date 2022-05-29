@@ -26,6 +26,7 @@ class DataCleaner:
             df[col] = pd.to_datetime(df[col])
 
         logger.info("string successfully converted to datetime")
+        return df
 
     def rename(self, df, col, old, new):
         """

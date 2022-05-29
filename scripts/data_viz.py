@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import scipy.stats as scs
 import logging
+from operator import itemgetter
+from collections import OrderedDict
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -18,6 +20,31 @@ class Data_Viz:
         file_handler.setFormatter(formatter)
         logger.addHandler(file_handler)
 
+
+
+    def get_importance(self, model, df):
+        """
+        it takes a regression model: model
+        it takes a dataframe: df
+        it returns a dictionary of importance scores: sortedx
+        """
+        features = df.drop(df.columns[[0]], axis=1).columns.to_list()
+        importance = model.feature_importances_
+        imp_dict = {}
+        for i in range(len(features)):
+            imp_dict[features[i]] = importance[i]
+
+        sorted_x = OrderedDict(sorted(imp_dict.items(), key=itemgetter(1)))
+        return sorted_x
+
+
+
+    def plot_line(self, df, x, y, figsize, title, name):
+        plt.figure(figsize=(figsize[0],figsize[1]))
+        sns.lineplot(x = x, y=y, data=df)
+        plt.title(title)
+        plt.savefig("../charts/"+name)
+        plt.show()
 
     def plot_bar(self, x_ax, y_ax, dfs, titles, axes ):
         """

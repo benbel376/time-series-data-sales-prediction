@@ -74,3 +74,23 @@ time: 2022-05-25 09:49:41,142, function: compare_binom_dist, module: data_viz, m
 
 time: 2022-05-25 09:51:06,152, function: summ_columns, module: data_viz, message: summary successfully created 
 
+time: 2022-05-26 13:33:36,283, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-26 13:34:00,656, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-26 13:34:14,711, function: compare_binom_dist, module: data_viz, message: double binomial distribution successfully created 
+
+time: 2022-05-26 13:36:00,554, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-26 13:39:18,813, function: sep_cat_num, module: data_transformation, message: successfully separated 
+
+time: 2022-05-27 17:43:51,743, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-27 17:44:17,296, function: binom_distribution, module: data_viz, message: binomial distribution successfully plotted 
+
+time: 2022-05-27 17:44:32,430, function: compare_binom_dist, module: data_viz, message: double binomial distribution successfully created 
+
+time: 2022-05-27 17:46:06,308, function: summ_columns, module: data_viz, message: summary successfully created 
+
+time: 2022-05-27 17:49:32,316, function: sep_cat_num, module: data_transformation, message: successfully separated 
+

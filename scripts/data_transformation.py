@@ -20,6 +20,19 @@ class DataTransformer:
         logger.addHandler(file_handler)
 
 
+    def build_pipe(self, cat_list):
+        """
+        takes categorical column names: cat_list
+        returns a pipe that process data for modeling
+        """
+        pipe = Pipeline(steps = [
+                                ("labeling", FunctionTransformer(self.cat_labeler, kw_args={"cat_cols": cat_list})),
+                                ("scaling", FunctionTransformer(self.scaler)), 
+                                ("target", FunctionTransformer(self.target_feature, kw_args={"t":0})),
+                                ("split", FunctionTransformer(self.set_splitter, kw_args={"test": 0.2}))
+                                ])
+        return pipe
+
     def sep_cat_num(self, df):
         """
         separates categorical and numerical variables
@@ -37,11 +50,13 @@ class DataTransformer:
         assigns a numerical label to categorical values
         """
         try:
+            print(df[cat_cols].head(5))
             for column in cat_cols:
                 encoder = LabelEncoder()
                 df[column] = encoder.fit_transform(df[column])
         
             print("catagories successfully labeled")
+            print(df[cat_cols].head(5))
         except:
             return df
         return df
@@ -57,7 +72,7 @@ class DataTransformer:
         print("Data successfully scaled")
         logger.info("Dataset successfully scaled")
         
-        return df
+        return [df, scaling]
 
     def normalizer(self, df):
         """
@@ -73,12 +88,14 @@ class DataTransformer:
 
         return scaled
 
-    def target_feature(self, df, t):
+    def target_feature(self, pack, t):
         """
         target and feature separator
         f: starting index for features
         t: the index of the target varoab;e
         """
+        df = pack[0]
+        scaler = pack[1]
 
         features = (df.drop(df.columns[[t]], axis = 1)).values
         target = df.iloc[:,t].values
@@ -86,20 +103,26 @@ class DataTransformer:
         print("target and features separated")
         logger.info("target and features separated")
 
-        return features, target
+        return [features, target, scaler]
 
-    def set_splitter(self, input, test, val, rand_state):
+    def set_splitter(self, input, test, rand_state = 10, val = 0):
         """
         splits dataset into specified percentages.
         """
-        features, target = input
+        features = input[0]
+        target = input[1]
+        scaler = input[2]
+
         per_1 = test
         per_2 = (1-test)*val
         x_train, x_test, y_train, y_test = train_test_split(features, target,test_size= per_1,shuffle = True, random_state = rand_state )
-        x_train, x_val, y_train, y_val = train_test_split(x_train, y_train,test_size= per_2, shuffle = True, random_state = rand_state)
+        if(per_2 != 0):
+            x_train, x_val, y_train, y_val = train_test_split(x_train, y_train,test_size= per_2, shuffle = True, random_state = rand_state)
 
         print("data successfully splitted")
         logger.info("data successfully splitted")
 
-
-        return [x_train, y_train, x_test, y_test, x_val, y_val]
+        if(per_2 !=0):        
+            return [x_train, y_train, x_test, y_test, x_val, y_val], scaler
+        else:
+            return [x_train, y_train, x_test, y_test], scaler
