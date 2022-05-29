@@ -1,18 +1,25 @@
 import pandas as pd
 import numpy as np
 from regex import D
-from data_viz import Data_Viz;
+import sys
+
 import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
+# importing scripts
+sys.path.insert(1, '..')
+sys.path.append("..")
+sys.path.append(".")
+
+from scripts import data_viz
 
 class DataCleaner:
     """
     class that handles data cleaning.
     """
     def __init__(self, filehandler) -> None:
-        self.summar = Data_Viz("../logs/data_clean_script.log") 
+        self.summar = data_viz.Data_Viz("logs/data_clean_script.log") 
         file_handler = logging.FileHandler(filehandler)
         formatter = logging.Formatter("time: %(asctime)s, function: %(funcName)s, module: %(name)s, message: %(message)s \n")
         file_handler.setFormatter(formatter)
