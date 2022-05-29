@@ -1,5 +1,5 @@
 import unittest
-from numpy import NaN
+import numpy as np
 import pandas as pd
 import sys, os
  
@@ -30,9 +30,9 @@ class TestTweetDfExtractor(unittest.TestCase):
 	"""
 
     def setUp(self) -> pd.DataFrame:
-        test_dict = {"col1":[2, 4, 3, NaN, NaN, NaN],
+        test_dict = {"col1":[2, 4, 3, np.nan, np.nan, np.nan],
                     "col2":["02-04-2015", "03-01-2013", "03-11-2014", "10-02-2009", "03-11-2014", "10-09-2009"],
-                    "col3":[1, 3, 10, NaN, NaN, NaN]}
+                    "col3":[1, 3, 10, np.nan, np.nan, np.nan]}
         self.test_df = pd.DataFrame(test_dict)
         # tweet_df = self.df.get_tweet_df()         
 
