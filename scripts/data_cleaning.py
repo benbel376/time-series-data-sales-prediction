@@ -19,7 +19,7 @@ class DataCleaner:
     class that handles data cleaning.
     """
     def __init__(self, filehandler) -> None:
-        self.summar = data_viz.Data_Viz("../logs/data_clean_script.log") 
+        self.summar = data_viz.Data_Viz("logs/data_clean_script.log") 
         file_handler = logging.FileHandler(filehandler)
         formatter = logging.Formatter("time: %(asctime)s, function: %(funcName)s, module: %(name)s, message: %(message)s \n")
         file_handler.setFormatter(formatter)
