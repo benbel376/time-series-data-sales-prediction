@@ -1,6 +1,10 @@
 import pandas as pd
 import numpy as np
 from regex import D
+import sys
+sys.path.append("../scripts")
+sys.path.append("..")
+sys.path.append(".")
 from data_viz import Data_Viz;
 import logging
 logger = logging.getLogger(__name__)
