@@ -4,8 +4,9 @@ import pandas as pd
 import sys, os
  
 # importing scripts
-sys.path.insert(1, '../scripts')
+sys.path.insert(1, '..')
 sys.path.append("..")
+sys.path.append(".")
 
 from scripts import data_viz
 from scripts import data_cleaning
