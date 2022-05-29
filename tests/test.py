@@ -12,9 +12,9 @@ from scripts import data_viz
 from scripts import data_cleaning
 from scripts import data_transformation
 
-DV = data_viz.Data_Viz("../logs/test.log")
-DC = data_cleaning.DataCleaner("../logs/test.log")
-DT = data_transformation.DataTransformer("../logs/test.log")
+DV = data_viz.Data_Viz("logs/test.log")
+DC = data_cleaning.DataCleaner("logs/test.log")
+DT = data_transformation.DataTransformer("logs/test.log")
 
 columns = ['created_at', 'source', 'original_text','clean_text', 'sentiment','polarity','subjectivity', 'lang', 'favorite_count', 'retweet_count', 
     'original_author', 'screen_count', 'followers_count','friends_count','possibly_sensitive', 'hashtags', 'user_mentions', 'place', 'place_coord_boundaries']
