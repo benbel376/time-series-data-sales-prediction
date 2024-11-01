@@ -1,0 +1,8 @@
+# requirements.txt
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+xgboost
+psycopg2-binary
