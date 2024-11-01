@@ -1,74 +1,127 @@
-# Rossmann Pharmacueticals Sales Forecast
+# Rossmann Pharmaceuticals Sales Forecasting
 
-## Results Live Demo
+## Live Demo
 
-- [Streamlit](https://rossman-sales-biniyam.herokuapp.com/)
+- [Streamlit Application](https://rossman-sales-biniyam.herokuapp.com/)
 
-**Table of content**
+---
 
-- [Telecom User Analytics](#Telecom_user_analytics)
-  - [Overview](#overview)
-  - [Objective](#Objective)
-  - [Requirements](#requirements)
-  - [Install](#install)
-  - [Data](#data)
-  - [Features](#features)
-    - [Data Processing and Analysis](#data-processing-and-analysis)
-    - [Scripts](#scripts)
-    - [Test](#test)
+## Table of Contents
+
+- [Overview](#overview)
+- [Objective](#objective)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Data](#data)
+  - [Data Fields](#data-fields)
+- [Features](#features)
+  - [Folder Structure](#folder-structure)
+  - [Data Processing and Analysis](#data-processing-and-analysis)
+- [Scripts](#scripts)
+- [Testing](#testing)
+- [Future Improvements](#future-improvements)
+- [License](#license)
+
+---
 
 ## Overview
 
-Rossmann Pharmaceuticals are multi-citiy pharmaceuticals stores. The company's finance team is 
-in need of sale forecast in all of their stores across several cities six weeks ahead of time
-managers in individual stores rely on their years of experience as well as their personal judgement
-to forecast sales until now.
+Rossmann Pharmaceuticals operates multiple stores across several cities. The finance team needs a reliable, data-driven approach to forecast sales for the next six weeks. Until now, managers have relied on their experience and intuition to make sales predictions, but this model provides a more systematic and scalable solution.
+
+This project builds an end-to-end forecasting product, from data processing and feature engineering to model building, deployment, and visualization. The final model can be served directly to analysts in the finance team for improved accuracy and efficiency.
 
 ## Objective
 
-to build and serve an end-to-end product that delivers this prediction to analysts in the finance team.
+To develop and deploy a predictive analytics solution that delivers sales forecasts to the finance team.
+
+---
 
 ## Requirements
-  Python 3.7 and above, mlflow, logging, dvc, sklearn, matplotlib, seaborn.
+
+- Python 3.7 or higher
+- Libraries: `mlflow`, `dvc`, `scikit-learn`, `matplotlib`, `seaborn`, `pandas`, `numpy`, `xgboost`, and `streamlit` for deployment.
+
+---
+
+## Installation
+
+To get started, clone the repository and install the required packages:
+
+  ```bash
+    git clone https://github.com/benbel376/rossman_predictive_analysis.git
+    cd rossman_predictive_analysis
+    pip install -r requirements.txt
+  ```
 
 
-## Install
-```
-git clone https://github.com/benbel376/rossman_predictive_analysis.git
-cd rossman_predictive_analysis
-pip install -r requirements.txt
-```
+## Data:
+  **description:** "The dataset can be downloaded from Kaggle: Rossmann Store Sales. This data includes historical sales information, promotions, holidays, and store attributes that impact sales performance."
+  fields:
+    - Store: "Unique ID for each store"
+    - Sales: "Sales revenue for each day (target variable)"
+    - Customers: "Number of customers for each day"
+    - Open: "Indicator if the store was open (1) or closed (0)"
+    - StateHoliday: "State holiday indicator (a: public, b: Easter, c: Christmas, 0: None)"
+    - SchoolHoliday: "Indicator if the store was affected by school holidays"
+    - StoreType: "Type of store (a, b, c, d)"
+    - Assortment: "Level of product assortment (a: basic, b: extra, c: extended)"
+    - CompetitionDistance: "Distance to nearest competitor store"
+    - CompetitionOpenSince: "Month and year the nearest competitor opened"
+    - Promo: "Whether a store was running a promotion"
+    - Promo2: "Continuous and periodic promotion (0: not participating, 1: participating)"
+    - Promo2Since: "Year and calendar week when Promo2 started"
+    - PromoInterval: "Months when Promo2 promotions start (e.g., 'Feb,May,Aug,Nov')"
 
-## Data and Features
+## Features:
+  **Folder_Structure:**
+    description: "The project is organized as follows:"
+    structure:
+      - .dvc/: "Data version control configuration"
+      - .github/: "GitHub workflows and CI/CD configurations"
+      - notebooks/: "Jupyter notebooks for exploratory data analysis"
+      - src/: "Main source code for the project"
+      - src/apps:
+          - __init__.py: "Package initialization"
+          - data_loader.py: "Loads and preprocesses sales data"
+          - eda.py: "Exploratory data analysis scripts"
+          - feature_engineering.py: "Feature engineering for model improvement"
+          - modeling.py: "Model training and hyperparameter tuning"
+          - predict.py: "Script for making predictions on new data"
+          - evaluation.py: "Evaluation metrics and model assessment"
+          - preprocessing.py: "Data cleaning and encoding"
+          - main.py: "Main pipeline to execute end-to-end workflow"
+      - src/infra:
+          - Dockerfile: "Dockerfile for containerizing the application"
+          - docker-compose.yml: "Multi-container setup for deployment"
+          - nginx/nginx.conf: "NGINX configuration for reverse proxy"
+          - setup_infrastructure.sh: "Script to install Docker and Docker Compose"
+          - deploy.sh: "Deployment script"
+      - README.md: "Project documentation"
 
-The data for this challenge can be found [here, Rossmann Store Sales | Kaggle](https://www.kaggle.com/competitions/rossmann-store-sales/data)
+## Data_Processing_and_Analysis:
+  description: "Data processing and analysis include steps like data cleaning, handling missing values, encoding categorical variables, and scaling numeric values."
+  steps:
+    - Exploratory_Data_Analysis: "Analyze sales trends, seasonal patterns, and key drivers of sales using eda.py."
+    - Feature_Engineering: "Enhance the dataset with engineered features (e.g., year, month, competition distance) using feature_engineering.py."
+    - Model_Selection: "Train models like Linear Regression, Decision Trees, Random Forest, and XGBoost using modeling.py."
 
-### Data fields
- 
-- Store - a unique Id for each store
-- Sales - the turnover for any given day (this is what you are predicting)
-- Customers - the number of customers on a given day
-- Open - an indicator for whether the store was open: 0 = closed, 1 = open
-- StateHoliday - indicates a state holiday. Normally all stores, with few exceptions, are closed on state   holidays. Note that all schools are closed on public holidays and weekends. a = public holiday, b = Easter holiday, c = Christmas, 0 = None
-- SchoolHoliday - indicates if the (Store, Date) was affected by the closure of public schools
-- StoreType - differentiates between 4 different store models: a, b, c, d
-- Assortment - describes an assortment level: a = basic, b = extra, c = extended. Read more about assortment here
-- CompetitionDistance - distance in meters to the nearest competitor store
-- CompetitionOpenSince[Month/Year] - gives the approximate year and month of the time the nearest competitor was opened
-- Promo - indicates whether a store is running a promo on that day
-- Promo2 - Promo2 is a continuing and consecutive promotion for some stores: 0 = store is not participating, 1 = store is participating
-- Promo2Since[Year/Week] - describes the year and calendar week when the store started participating in Promo2
-- PromoInterval - describes the consecutive intervals Promo2 is started, naming the months the promotion is started anew. E.g. "Feb,May,Aug,Nov" means each round starts in February, May, August, November of any given year for that store
+## Scripts:
+  description: "All the scripts for data loading, preprocessing, model training, and evaluation are located within the src/apps directory. Each script is modular and can be run independently or as part of the main pipeline in main.py."
 
-## Features
-the folder structure
-![structure](outputs/folder_structure.txt)
+## Testing:
+  description: "Tests for the scripts are located in the tests folder and ensure the reliability of each component."
+  tests_include: 
+    - "Data integrity checks"
+    - "Model accuracy validation"
+    - "Feature engineering correctness"
 
-### Data Processing and Analysis
-  - ![ML pipeline design](charts/pipeline.png?raw=true)
-  
-### Scripts
- - All the scripts used by the notebooks are inside the scripts folder.
+## Future_Improvements:
+  - Model_Optimization: "Experiment with deep learning models for improved accuracy."
+  - Additional_Data_Sources: "Integrate external data like weather or economic indicators."
+  - Parameter_Tuning: "Use advanced methods like Bayesian optimization for hyperparameter tuning."
 
-### Test
- - Tests for the scripts are inside the tests folder.
+## License:
+  description: "This project is licensed under the MIT License - see the LICENSE file for details."
+
+## Summary:
+  description: "With this README, users can get a comprehensive view of the project, from installation and data structure to features and deployment."
